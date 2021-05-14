@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        window.onload = function () {
+            console.log("start")
+            new Promise(resolve => {
+                setTimeout(() => {
+                    resolve("hello")
+                },2000)
+            }).then(value => {
+                console.log(value + "world")
+            })
+        //结果输出start，并且2秒后输出helloworld
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
